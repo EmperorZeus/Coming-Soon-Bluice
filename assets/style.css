@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/Clip path group.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  font-family: 'k2d', sans-serif;
+
+}
+
+.content {
+  width: 50%;
+  height: 100vh;
+}
+
+.count-down {
+  width: 70%;
+  margin-top: 3vh;
+}
+
+.count-down-division {
+  height: 15vh;
+  width: 15vh;
+  border-radius: 15%;
+  background-color: white;
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.25);
+}
+
+.value {
+  font-size: 7vh;
+  margin-bottom: -1vh;
+}
+
+.title {
+  margin-top: 3vh
+}
+
+.title .logo {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right,rgba(173,0,255,1), rgba(51, 0, 253,1));
+  font-size: 8vh;
+  font-weight: 500;
+}
+
+.title .desc {
+  margin-top: -2.5vh;
+  font-size: 3vh;
+}
+
+.about {
+  width: 80%;
+}
+
+.about-title {
+  font-size: 3vh;
+  font-weight: 600;
+}
+
+.about-desc {
+  margin-top: 1vh;
+  font-size: 2vh;
+  text-align: center;
+}
+
+.future {
+  width: 80%;
+}
+
+.future-elements {
+  margin-top: -1.5vh;
+  width: 100%;
+}
+
+.future .title {
+  font-size: 3vh;
+  font-weight: 600;
+}
+
+.future .garden {
+  font-size: 4.5vh;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: radial-gradient(circle at 30% 60%, rgb(19,97,22), rgb(60, 0, 253), rgb(39, 127, 12));
+}
+
+.future .events {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to left,rgba(173,0,255,1), rgba(51, 0, 253,1));
+  font-size: 4.5vh;
+}
+
+.future-elements p {
+  text-align: right;
+  font-size: 1.5vh;
+  margin-top: -1vh;
+}
+
+
+.social {
+  margin-top: 3vh;
+}
+
+.social a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 1vh;
+  font-size: 1.5vh;
+}
+
+
+
+@media (max-width: 800px) {
+
+  .content {
+    width: 80%;
+  }
+
+  }
+
+
+@media (max-width: 500px) {
+
+  body {
+    background-image: url('images/Clip path group-mobile.jpg');
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .count-down {
+    width: 90%;
+  }
+
+  .count-down-division {
+    height: 7vh;
+    width: 7vh;
+  }
+
+
+  .value {
+    font-size: 3vh;
+  }
+
+  .count-down .period {
+    font-size: 1vh;
+  }
+
+  .title .logo {
+    font-size: 5vh;
+  }
+
+  .title .desc {
+    font-size: 2.7vh;
+    margin-top: 0.3px;
+  }
+
+  .about {
+    width: 90%;
+  }
+
+  .about-title {
+    font-size: 2vh;
+  }
+
+  .about-desc {
+    font-size: 1.2vh;
+  }
+
+  .future {
+    width: 90%;
+  }
+
+  .future .title {
+    font-size: 2vh;
+  }
+
+  .future .events {
+    font-size: 2.2vh;
+  }
+
+  .future .garden {
+    font-size: 2.2vh;
+  }
+
+  .future-elements p {
+    font-size: 1vh;
+  }
+}
