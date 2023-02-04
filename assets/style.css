@@ -4,43 +4,36 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-image: url("images/Clip path group.jpg");
-  background-size: cover;
+  background-size : cover;
   background-position: center;
-  height: 100vh;
+  background-repeat: no-repeat;
   font-family: 'k2d', sans-serif;
-
-}
-
-.content {
-  width: 50%;
   height: 100vh;
 }
+
 
 .count-down {
-  width: 70%;
-  margin-top: 3vh;
+  margin-top: 10vh;
 }
 
 .count-down-division {
-  height: 15vh;
-  width: 15vh;
+  margin: 10px;
+  height: 100px;
+  width: 100px;
   border-radius: 15%;
   background-color: white;
   box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.25);
 }
 
 .value {
-  font-size: 7vh;
+  font-size: 55px;
   margin-bottom: -1vh;
 }
-
-.title {
-  margin-top: 3vh
+.period {
+  font-size: 15px;
 }
+
 
 .title .logo {
   background-clip: text;
@@ -57,7 +50,9 @@ body {
 }
 
 .about {
-  width: 80%;
+  max-width: 70%;
+  min-width: 60%;
+  padding: 0 100px 0 100px;
 }
 
 .about-title {
@@ -67,12 +62,14 @@ body {
 
 .about-desc {
   margin-top: 1vh;
-  font-size: 2vh;
+  font-size: 15px;
   text-align: center;
 }
 
 .future {
-  width: 80%;
+  margin-top: 2vh;
+  width: 70%;
+  padding: 0 30px 0 30px;
 }
 
 .future-elements {
@@ -86,7 +83,7 @@ body {
 }
 
 .future .garden {
-  font-size: 4.5vh;
+  font-size: 40px;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -98,7 +95,7 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   background-image: linear-gradient(to left,rgba(173,0,255,1), rgba(51, 0, 253,1));
-  font-size: 4.5vh;
+  font-size: 40px;
 }
 
 .future-elements p {
@@ -107,10 +104,6 @@ body {
   margin-top: -1vh;
 }
 
-
-.social {
-  margin-top: 3vh;
-}
 
 .social a {
   display: inline-block;
@@ -124,35 +117,118 @@ body {
 }
 
 .copyright {
-  position: absolute;
-  bottom: 1vh;
-  font-size: 1.5vh;
+  padding-bottom: 5px;
+  font-size: 10px;
+}
+
+.terms button{
+  size: contain;
+  background-color: transparent;
+  border: none;
+  font-size: 10px;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 80%; /* Full width */
+  height: 80%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 
 
-@media (max-width: 800px) {
 
-  .content {
-    width: 80%;
+@media (max-width: 950px) {
+
+
+  .count-down-division{
+    height: 70px ;
+    width: 70px;
+  }
+  .value {
+    font-size: 35px;
   }
 
+  .period{
+    font-size: 12px;
   }
 
+  .title .logo{
+    font-size: 45px;
+  }
 
-@media (max-width: 500px) {
+  .title .desc{
+    font-size: 20px;
+  }
+
+  .about, .future {
+    padding: 0;
+  }
+
+  .future .title , .about-title{
+    font-size: 17px;
+  }
+
+  .future .events, .future .garden {
+    font-size: 25px;
+  }
+
+  .about-desc {
+    font-size: 13px;
+  }
+
+  .terms button{
+    font-size: 5px;
+  }
+
+  .social img{
+    width: 16px;
+    height: 16px;
+  }
+}
+
+
+@media (max-width: 550px) {
 
   body {
     background-image: url('images/Clip path group-mobile.jpg');
   }
 
-  .content {
-    width: 100%;
-  }
 
-  .count-down {
+  .count-down{
+    margin-top: 20vh;
     width: 90%;
   }
+
 
   .count-down-division {
     height: 7vh;
@@ -173,12 +249,13 @@ body {
   }
 
   .title .desc {
-    font-size: 2.7vh;
+    font-size: 2.5vh;
     margin-top: 0.3px;
   }
 
   .about {
     width: 90%;
+    margin-bottom: 15vh;
   }
 
   .about-title {
@@ -191,6 +268,8 @@ body {
 
   .future {
     width: 90%;
+    margin-top: -10vh;
+    margin-bottom: 10vh;
   }
 
   .future .title {
@@ -207,5 +286,10 @@ body {
 
   .future-elements p {
     font-size: 1vh;
+  }
+
+  
+  .copyright{
+    font-size: 10px;
   }
 }

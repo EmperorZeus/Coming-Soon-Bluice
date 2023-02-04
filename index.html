@@ -9,56 +9,85 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <title>Bluice</title>
 </head>
-<body>
-  <div class="d-flex justify-content-center align-items-center flex-column content">
+<body class="d-flex justify-content-between align-items-center flex-column content" >
 
-    <div class="d-flex justify-content-around count-down">
-      <div class="d-flex flex-column align-items-center justify-content-center count-down-division">
-        <div class="value" id="days">0</div>
-        <div class="period" style="display: block;">Days</div>
+  <div class="d-flex justify-content-center count-down">
+    <div class="d-flex flex-column align-items-center justify-content-center count-down-division">
+      <div class="value" id="days">0</div>
+      <div class="period" style="display: block;">Days</div>
+    </div>
+    <div class="d-flex flex-column align-items-center justify-content-center count-down-division">
+      <div class="value" id="hours">0</div>
+      <div class="period">Hours</div>
+    </div>
+    <div class="d-flex flex-column align-items-center justify-content-center count-down-division">
+      <div class="value"id="minutes">0</div>
+      <div class="period">Minutes</div>
+    </div>
+    <div class="d-flex flex-column align-items-center justify-content-center count-down-division">
+      <div class="value" id = "seconds" >0</div>
+      <div class="period">Seconds</div>
+    </div>
+  </div>
+
+
+
+  <div class="title d-flex align-items-center justify-content-center ml-auto flex-column">
+    <div class="logo">Bluice</div>
+    <p class="desc">Our Dream Come True Soon</p>
+  </div>
+
+  <div class="about d-flex align-items-center justify-content-center flex-column">
+  <div class="about-title">About Bluice</div>
+  <div class="about-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet molestie risus, vel euismod mi congue a. Praesent convallis suscipit tortor, vel facilisis dui scelerisque eget. In vel mauris vel libero tincidunt feugiat ut ac neque. Nam condimentum lorem a varius scelerisque. Integer et leo velit.</div>
+  </div>
+
+
+  <div class="future d-flex align-items-center flex-column">
+    <p class="title">Our Future</p>
+    <div class="future-elements d-flex align-items-center justify-content-around">
+      <div>
+        <div class="events">Bluice Events</div>
+        <p>Making Dream Possible</p>
       </div>
-      <div class="d-flex flex-column align-items-center justify-content-center count-down-division">
-        <div class="value" id="hours">0</div>
-        <div class="period">Hours</div>
-      </div>
-      <div class="d-flex flex-column align-items-center justify-content-center count-down-division">
-        <div class="value"id="minutes">0</div>
-        <div class="period">Minutes</div>
-      </div>
-      <div class="d-flex flex-column align-items-center justify-content-center count-down-division">
-        <div class="value" id = "seconds" >0</div>
-        <div class="period">Seconds</div>
+      <div>
+        <div class="garden">Bluice Gardens</div>
+        <p>Live with Nature</p>
       </div>
     </div>
+  </div>
+  <div class="terms_and_social">
+    <div class="terms d-flex flex-column">
 
-
-
-    <div class="title d-flex align-items-center justify-content-center ml-auto flex-column">
-      <div class="logo">Bluice</div>
-      <p class="desc">Our Dream Come True Soon</p>
-    </div>
-
-    <div class="about d-flex align-items-center justify-content-center flex-column">
-    <div class="about-title">About Bluice</div>
-    <div class="about-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet molestie risus, vel euismod mi congue a. Praesent convallis suscipit tortor, vel facilisis dui scelerisque eget. In vel mauris vel libero tincidunt feugiat ut ac neque. Nam condimentum lorem a varius scelerisque. Integer et leo velit.</div>
-    </div>
-
-
-    <div class="future d-flex align-items-center flex-column">
-      <p class="title">Our Future</p>
-      <div class="future-elements d-flex align-items-center justify-content-around">
-        <div>
-          <div class="events">Bluice Events</div>
-          <p>Making Dream Possible</p>
+      <button id="careerBtn">* career</button>
+      <div id="careerModal" class="modal">
+        <div class="modal-content">
+          <span class="career-close close">&times;</span>
+          <p>Your career and conditions go here...</p>
         </div>
-        <div>
-          <div class="garden">Bluice Gardens</div>
-          <p>Live with Nature</p>
+      </div>
+
+
+      <button id="policyBtn">* Policies</button>
+      <div id="policyModal" class="modal">
+        <div class="modal-content">
+          <span class="policy-close close">&times;</span>
+          <p>Your policy and conditions go here...</p>
         </div>
       </div>
+
+
+      <button id="termsBtn">* Terms and Conditions</button>
+      <div id="termsModal" class="modal">
+        <div class="modal-content">
+          <span class="terms-close close">&times;</span>
+          <p>Your terms and conditions go here...</p>
+        </div>
+      </div>
+
     </div>
 
-    <div class="social">
+    <div class="social d-flex justify-content-center">
       <a href="#">
         <img src="assets/images/icon-facebook.png" alt="Facebook">
       </a>
@@ -70,16 +99,12 @@
       </a>
 
     </div>
-    <div class="d-flex justify-content-center">
-      <small class="copyright">Copyright 2023 @ Developed by Bluice</small>
-    </div>
-
   </div>
 
-  <footer>
-    
-  </footer>
 
+  <footer class="d-flex justify-content-center">
+    <small class="copyright">Copyright 2023 @ Developed by Bluice</small>
+  </footer>
 
 
   <script src="assets/script.js"></script>
