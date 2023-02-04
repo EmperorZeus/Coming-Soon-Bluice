@@ -7,14 +7,24 @@ body {
   background-image: url("images/Clip path group.jpg");
   background-size : cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: 'k2d', sans-serif;
   height: 100vh;
 }
 
+.top {
+  height: 77%;
+  padding-top: 30vh;
+  padding-bottom: 20vh;
+}
 
-.count-down {
-  margin-top: 10vh;
+.terms_and_social {
+  padding-top: 5vh;
+  height: 20%;
+}
+
+footer {
+  height: 3%;
 }
 
 .count-down-division {
@@ -67,13 +77,12 @@ body {
 }
 
 .future {
-  margin-top: 2vh;
   width: 70%;
-  padding: 0 30px 0 30px;
+  padding: 25px 30px 0 30px;
 }
 
 .future-elements {
-  margin-top: -1.5vh;
+  margin-top: -2vh;
   width: 100%;
 }
 
@@ -202,6 +211,10 @@ body {
     font-size: 25px;
   }
 
+  .future-elements p {
+    font-size: 10px;
+  }
+
   .about-desc {
     font-size: 13px;
   }
@@ -225,7 +238,6 @@ body {
 
 
   .count-down{
-    margin-top: 20vh;
     width: 90%;
   }
 
@@ -255,7 +267,7 @@ body {
 
   .about {
     width: 90%;
-    margin-bottom: 15vh;
+    margin-bottom: 3vh;
   }
 
   .about-title {
@@ -268,8 +280,6 @@ body {
 
   .future {
     width: 90%;
-    margin-top: -10vh;
-    margin-bottom: 10vh;
   }
 
   .future .title {
@@ -285,7 +295,7 @@ body {
   }
 
   .future-elements p {
-    font-size: 1vh;
+    font-size: 8px;
   }
 
   
