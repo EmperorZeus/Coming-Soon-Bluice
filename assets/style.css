@@ -186,6 +186,11 @@ footer {
   cursor: pointer;
 }
 
+@media (max-height: 540px) {
+  body {
+    display: none;
+  }
+}
 
 
 
@@ -265,7 +270,7 @@ footer {
   }
 
   .top {
-    padding-top: 35%;
+    padding-top: 25%;
   }
   .count-down{
     width: 90%;
@@ -333,89 +338,6 @@ footer {
 
   
   .copyright{
-    font-size: 7px;
-  }
-}
-
-
-@media only screen and (max-width: 940px) and (max-height:540px){
-
-  body {
-    background-image: url('images/Clip path group-mobile.jpg');
-  }
-
-  .top {
-    padding-top: 15%;
-    margin-bottom: -3%;
-  }
-
-
-  .count-down{
-    width: 90%;
-  }
-
-
-  .count-down-division {
-    height: 40px;
-    width: 40px;
-  }
-
-
-  .value {
-    font-size: 3vh;
-  }
-
-  .count-down .period {
-    font-size: 1vh;
-  }
-
-  .title .logo {
-    font-size: 30px;
-  }
-
-  .title .desc {
-    font-size: 2.5vh;
-  }
-
-  .about {
-    width: 90%;
-    margin-bottom: 3vh;
-  }
-
-  .about-title {
-    font-size: 2vh;
-  }
-
-  .about-desc {
-    width: 60%;
-    font-size: 7px;
-  }
-
-  .future {
-    width: 100%;
-    margin-bottom: -10px;
-  }
-
-  .future .title {
-    font-size: 2vh;
-  }
-
-  .future .events, .future .garden {
-    font-size: 17px;
-  }
-
-  .future-elements p {
-    margin-top: -7px;
-    font-size: 8px;
-  }
-
-  .terms_and_social{
-    width: 55%;
-  }
-
-  
-  .copyright{
-    padding-top: 10px;
     font-size: 7px;
   }
 }
